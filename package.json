@@ -1,0 +1,29 @@
+{
+  "name": "id-vp",
+  "version": "1.0.0",
+  "description": "Õppetöö raames tehtud veeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jtristan-a@github.com/jtristan-a/veebiprogrammeerimise-projekt.git"
+  },
+  "keywords": [
+    "TLÜ",
+    "DTI",
+    "veeb",
+    "õppetöö"
+  ],
+  "author": "Tristan Johanson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtristan-a/veebiprogrammeerimise-projekt/issues"
+  },
+  "homepage": "https://github.com/jtristan-a/veebiprogrammeerimise-projekt#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
