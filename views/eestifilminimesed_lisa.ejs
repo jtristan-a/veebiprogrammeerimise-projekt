@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <title>Lisamine</title>
+</head>
+<body>
+    <h1>Lisa Eesti filmiga seotud inimesi</h1>
+    <ul>
+        <a href="/eestifilm/inimesed">Tagasi filmi inimeste avalehele</a>
+        <a href="/">Tagasi avalehele</a>
+    </ul>
+  <form method="POST">
+    <label for="firstnameInput">Filmiinimese eesnimi</label>
+    <input id="firstnameInput" name="firstnameInput" type="text" placeholder="Eesnimi">
+    <br>
+    <label for="lastnameInput">Filmiinimese perekonnanimi</label>
+    <input id="lastnameInput" name="lastnameInput" type="text" placeholder="Perekonnanimi">
+    <br>
+    <label for="bornInput">Filmiinimese sünnikuupäev</label>
+    <input id="bornInput" name="bornInput" type="date">
+    <br>
+    <label for="deceasedInput">Filmiinimese surmakuupäev</label>
+    <input id="deceasedInput" name="deceasedInput" type="date">
+    <br>
+    <input id="personSubmit" name="personSubmit" type="Submit" value="Salvesta">
+  </form>
+  <p><%= notice %></p>
+</body>
+</html>
