@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="utf-8">
-    <title>Lisamine</title>
+	<meta charset="utf-8">
+	<title>Tristan Johanson, veebiprogrammeerimine</title>
 </head>
 <body>
-    <h1>Lisa Eesti filmiga seotud inimesi</h1>
-    <ul>
-        <a href="/eestifilm/inimesed">Tagasi filmi inimeste avalehele</a>
-        <a href="/">Tagasi avalehele</a>
-    </ul>
-  <form method="POST">
-    <label for="firstnameInput">Filmiinimese eesnimi</label>
-    <input id="firstnameInput" name="firstnameInput" type="text" placeholder="Eesnimi">
-    <br>
-    <label for="lastnameInput">Filmiinimese perekonnanimi</label>
-    <input id="lastnameInput" name="lastnameInput" type="text" placeholder="Perekonnanimi">
-    <br>
-    <label for="bornInput">Filmiinimese sünnikuupäev</label>
-    <input id="bornInput" name="bornInput" type="date">
-    <br>
-    <label for="deceasedInput">Filmiinimese surmakuupäev</label>
-    <input id="deceasedInput" name="deceasedInput" type="date">
-    <br>
-    <input id="personSubmit" name="personSubmit" type="Submit" value="Salvesta">
-  </form>
-  <p><%= notice %></p>
+	<img src="../pic/veebiprogrammeerimine_2026_ID.png" alt="bänner">
+	<h1>Lisa eesti filmiga seotud inimesi</h1>
+	<ul>
+		<li><a href="/">Tagasi avalehele</a></li>li>
+		<li><a href="/eestifilm">Tagasi Eesti filmi avalehele</a></li>li>
+	</ul>
+	<hr>
+	<form method="POST">
+		<label for="firstNameInput">Filmiinimese eesnimi</label>
+		<input id="firstNameInput" name="firstNameInput" type="text" placeholder="Eesnimi" value="<%= firstName %>" required>
+		<br>
+		<label for="lastNameInput">Filmiinimese eesnimi</label>
+		<input id="lastNameInput" name="lastNameInput" type="text" placeholder="Perekonnanimi" value="<%= lastName %>" required>
+		<br>
+		<label for="bornInput">Filmiinimese sünnikuupäev</label>
+		<input id="bornInput" name="bornInput" type="date" value="<%= born %>" required>
+		<br>
+		<label for="deceasedInput">Filmiinimese surmakuupäev</label>
+		<input id="deceasedInput" name="deceasedInput" type="date" value="<%= deceased %>">
+		<br>
+		<input id="personSubmit" name="personSubmit" type="submit" value="Salvesta">
+	</form>
+	<p><%= notice %></p>
+
 </body>
 </html>
